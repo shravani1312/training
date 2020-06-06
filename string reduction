@@ -1,0 +1,36 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+class Result {
+
+    /*
+     * Complete the 'getMinDeletions' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts STRING s as parameter.
+     */
+
+    public static int getMinDeletions(String s) {
+    int c=1,st=0;
+    for(int i=1;i<s.length();i++)
+    {
+        if(s.charAt(i)==s.charAt(i-1))
+        c=c+1;
+        else
+        {
+            st=st+(c/2);
+            c=1;
+        }
+        st+=c/2;
+    }
+    return st;
+    }
+
+}
+public class Solution {
