@@ -1,0 +1,8 @@
+class Last
+{
+public static void printLast(String word)
+{
+int n=word.length();
+String neww=id.getChars(n-2,n-1);
+return newww;
+}
