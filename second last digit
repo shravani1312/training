@@ -1,0 +1,8 @@
+import java.util.*;
+public class Usermaincode
+{
+public static int (input1)
+{
+return Math.abs((input1%100)/10);
+}
+}
