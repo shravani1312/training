@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Count{
+	public static int NoOfDigits(int input1){
+		int count=0;
+		while(input1!=0){
+			input1/=10;
+			count++;
+		}
+		return count;
+		
+	}
+	
+public static void main(String[] args){
+    Scanner st = new Scanner(System.in);
+	  int input=st.nextInt();
+    System.out.println(NoOfDigits(input));
+    st.close();
+	
+   }
+}
