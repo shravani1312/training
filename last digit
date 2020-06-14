@@ -1,0 +1,8 @@
+import java.io.*;
+import java.util.*;
+class UsermainCode
+{
+public lastdigit(int input1)
+return (input1%10);
+}
+}
