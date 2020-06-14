@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+    {
+	   Scanner in = new Scanner(System.in);
+	   int a[] = new int[]{18,20,10,20,6};
+	   int l=0;
+	   int sum=0;
+	   float avg;
+	   l=a.length;
+	   System.out.println(+l);
+	   for(int i=0;i<l;i++)
+	   {
+	       sum = sum+a[i];
+	   }
+	   System.out.println("The sum of the elements in the array"+sum);
+	   avg = sum/l;
+	   System.out.println("The average value of the elements in the array"+avg);
+    }
+}
