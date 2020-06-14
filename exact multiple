@@ -1,0 +1,15 @@
+import java.io.*;
+import java.math.*;
+import java.util.*;
+
+class Check{
+public static boolean IsExactMultiple(int input1,int input2){
+	return (input1%input2==0)?true:false;
+    }
+public static void main(String[] args){
+     Scanner s = new Scanner(System.in);
+     int n = s.nextInt();
+     int m = s.nextInt();
+     System.out.println(IsExactMultiple(n,m));
+     }
+}
