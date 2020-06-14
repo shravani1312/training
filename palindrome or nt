@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Palindrome{
+	public static int IsPalinPossible(int input1){
+		int [] arr=new int[10];
+		int a,oddcount=0;
+		for(int i=0;i<10;i++) {
+			arr[i]=0;
+		}
+		while(input1>0) {
+			a=input1%10;
+			arr[a]+=1;
+			input1/=10;
+		}
+		for(int j:arr) {
+			if(j%2!=0) {
+				oddcount+=1;
+			}
+			if(oddcount>1) {
+				return 2; //Not Possible
+			}
+		}
+		return 1;//Possible
+		
+	}
+	
+public static void main(String[] args){
+    Scanner st = new Scanner(System.in);
+    int inp=st.nextInt();
+    System.out.println(IsPalinPossible(inp));
+    st.close();
+	
+   }
+}
