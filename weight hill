@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Weight{
+	public static int weightHillPattern(int input1, int input2, int input3){
+		int count=0;
+		for(int i=1;i<=input1;i++){
+			for(int j=0;j<i;j++){
+				count+=input2;
+			}
+			input2+=input3;
+		}
+		return count;
+	}
+	
+public static void main(String[] args){
+    Scanner st = new Scanner(System.in);
+    int a=st.nextInt();
+    int b=st.nextInt();
+    int c=st.nextInt();
+    System.out.println(SumOfEvenDigits(a,b,c));
+    st.close();
+	
+   }
+}
