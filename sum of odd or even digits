@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Sum{
+	public static int SumOfEvenOddDigits(int input1,String st){
+		int even=0,odd=0;
+		int n=0;
+		while(input1!=0){
+			n=input1%10;
+			if(n%2==0){
+				even+=n;
+			}
+			else {
+				odd+=n;
+			}
+			input1/=10;
+		}
+		return (st.equals("even")?even:odd);
+		}
+	
+public static void main(String[] args){
+    Scanner st = new Scanner(System.in);
+    int inp=st.nextInt();
+    String s=st.next();
+    System.out.println(SumOfEvenOddDigits(inp,s));
+    st.close();
+	
+   }
+}
