@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Primes{
+	public static int PrimesInRange(int input1,int input2){
+		int count=0,i,j;
+		for(i=input1;i<=input2;i++){
+			for(j=2;j<=i;j++){
+				if(i%j==0){
+					break;
+				}
+			}
+			if(i==j){
+				count++;
+			}
+		}
+		return count;
+	}
+	
+public static void main(String[] args){
+    Scanner st = new Scanner(System.in);
+	  int input1=st.nextInt();
+	  int input2=st.nextInt();
+    System.out.println(PrimesInRange(input1,input2));
+    st.close();
+	
+   }
+}
