@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+public string identifyPossibleWords(string input1,string input2){
+string[]ar=input2.split(":");
+string temp="",fin"";
+int count=0;
+for(int i=0;i<ar.length;i++)
+{
+temp=ar[i];
+count=0;
+if(temp.length()==input1.length()){
+for(int j=0;j<temp.length();j++){
+if(input1.chrAt(j)!='-'){
+if(character.toUpperCase(input1.charAt(j))==character.toUppercase(temp.charAt(j))){
+count++;
+}
+}
+}
+if(count==temp.length()-1)
+fin=fin+temp.toUppercase()+":";
+}
+}
+if(fin=="")
+return "ERROR-009";
+return fin.substring(0,fin.length()-1);
+}
+}
