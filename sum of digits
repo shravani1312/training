@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class DigitSum{
+	public static int Sum(int input1){
+		int sum=0;
+		int a=Math.abs(input1);
+		while(a!=0){
+			sum+=a%10;
+			a/=10;
+					
+					if(a==0 && sum>9){
+						a=sum;
+						sum=0;
+
+					}
+		}
+		if(input1<0){
+			return -sum;
+		}
+		return sum;
+
+}
+	
+public static void main(String[] args){
+    Scanner st = new Scanner(System.in);
+	  int inp=st.nextInt();
+    System.out.println(Sum(inp));
+    st.close();
+	
+   }
+}
+© 2020 GitHub, Inc.
