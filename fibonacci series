@@ -1,0 +1,36 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'fibonacci' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts INTEGER n as parameter.
+     */
+
+    public static List<Integer> fibonacci(int n) {
+    // Write your code here
+    int a=0,b=1,c=0;
+    ArrayList<Integer> list=new ArrayList<Integer>(); 
+    for (int i=2;i<=n;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+        list.add(c);
+    }
+      return list;
+    }
+
+}
+
+public class Solution {
